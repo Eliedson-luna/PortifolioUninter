@@ -1,0 +1,57 @@
+.secao-Contato{
+    width: 100%;
+    min-height: 90vh;
+    display: flex;
+    justify-content: center;
+    color: #ffffff;
+}
+.secao-Conteudo {
+    display: flex;
+    flex-direction: column;
+    margin: 5%;
+    border-radius: 10px;
+    background-color: #0000003c;
+}
+.secao-Conteudo>h1{
+    margin: 20px;
+    font-size: 40px;
+}
+.formulario-contato{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    margin: 10%;
+}
+.input-box {
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 30px 0 ;
+    font-size: 15px;
+}
+.input-box>label{
+    margin: 0 0 5px 0;
+}
+textarea {
+    resize: none;
+}
+input {
+    height: 25px;
+}
+input, textarea {
+    border: none;
+    border-radius: 5px;
+}
+input:hover, textarea:hover {
+    box-shadow: #90ee90 0 0 5px;
+}
+
+#btn-enviar {
+    height: 25px;
+    border: none;
+    border-radius: 10px;
+}
+#btn-enviar:hover {
+    color: #fff;
+    background-color: #09cc09c6;
+    box-shadow: #90ee90 0 0 5px;
+}

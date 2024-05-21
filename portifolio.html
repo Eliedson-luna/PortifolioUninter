@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/reset.css">
+    <link rel="stylesheet" href="./style/bodyPattern.css">
+    <title>Projetos</title>
+    <style>
+       
+.Content {
+    height: 100vh;
+    max-height: 80vh;
+    overflow: scroll;
+    scrollbar-width: none;
+    margin: 50px 50px 50px 100px;
+    text-align: justify;
+}
+
+.projects {
+    margin: 30px;
+}
+.project {
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    width: 60vw;
+    min-height: 240px;
+    margin: 5%;
+    background-color: #0435021e;
+    border-radius: 10px;
+    box-shadow: rgb(2, 247, 2) 0 0 1px;
+}
+.project-title {
+    width: 50%;
+    margin: 10px 10px 10px 10px ;
+    font-size: 40px;
+    box-shadow: #ade6c2 0 1px;
+}
+.project-content {
+    display: flex;
+    margin: 10px;
+}
+.project-info{
+    width: 50%;
+    margin: 10px 10px 10px 10px;
+    text-align: justify;
+
+}
+.project-info>p{
+    margin: 0px 0px 10px 0px;
+    text-align: justify;
+}
+.project-link{
+    color: #5d885d;
+}
+.project-link:hover{
+    color: #75a875;
+}
+.project-img { 
+    width: 100px;
+    max-width: 100px;
+    margin: 10px 10px 30px 60px;
+    border-radius: 5px;
+    transform: rotate();
+}
+ 
+    </style>
+</head>
+<header>
+    <nav class="Menu">
+        <ul class="Menu-list">
+            <li><a id="home-link" href="index.html">Formação</a></li>
+            <li><a id="sobre-link" href="sobre.html">Sobre mim</a></li>
+            <li><a id="projetos-link" href="portifolio.html">Portifólio</a></li>
+            <li><a id="contato-link" href="contato.html">Contato</a></li>
+
+        </ul>
+    </nav>
+</header>
+
+<body>
+    <div class="Content">
+        <!-- lista dos projetos desenvolvidos por mim -->
+        <ul id="projects">
+            <li class="project" id="project-1">
+                <h1 class="project-title" id="project-title-1">
+                    Calculadora SimpleCalc
+                </h1>
+                <div class="project-content">
+
+                    <div class="project-info">
+                        <p class="project-paragraph" id="project-paragraph-1">
+                            Feita em Java e aplicando meus conhecimentos em programação orientada a objetos.
+                        </p>
+                        <span>Veja em meu
+                            <a class="project-link" target="_blank" rel="external"
+                                href="https://github.com/Eliedson-luna/SimpleCalc">GitHub</a>.
+                        </span>
+                    </div>
+                    <img src="./img/img-projeto-1.png" class="project-img" id="project-img-1">
+                </div>
+            </li>
+            <li class="project" id="project-2">
+                <h1 class="project-title" id="project-title-2">
+                    Site Barbearia Alura
+                </h1>
+                <div class="project-content">
+                    <div class="project-info">
+                        <p class="project-paragraph" id="project-paragraph-2">
+                            Este é um site criado em um curso de desenvolvimento front end pela alura.
+                        </p>
+                        <p class="project-paragraph" id="project-paragraph-2">
+                        </p>
+                        <span>Veja em meu
+                            <a class="project-link" target="_blank" rel="external"
+                                href="https://github.com/Eliedson-luna/Barbearia">GitHub</a>
+                            Ou acesse o
+                            <a class="project-link" target="_blank" rel="external"
+                                href="https://eliedson-luna.github.io/Barbearia/">Site</a>.
+                        </span>
+                    </div>
+                    <img src="./img/img-projeto-2.png" class="project-img" id="project-img-2">
+                </div>
+            </li>
+            <li class="project" id="project-3">
+                <h1 class="project-title" id="project-title-3">
+                    Portifólio
+                </h1>
+                <div class="project-content">
+                    <div class="project-info">
+                        <p class="project-paragraph" id="project-paragraph-3">
+                            Projeto de Portifólio criado utilizando a bliblioteca react.
+                        </p>
+                        <p class="project-paragraph" id="project-paragraph-3">
+
+                        </p>
+                        <span>Veja em meu
+                            <a class="project-link" target="_blank" rel="external"
+                                href="https://github.com/Eliedson-luna/Portifolio-Eliedson-Luna">GitHub</a>.
+                        </span>
+                    </div>
+                    <img src="./img/img-projeto-3.png" class="project-img" id="project-img-3">
+                </div>
+            </li>
+        </ul>
+    </div>
+    <footer id="footer">
+        <div>
+            <p>CopyRigth - eliedsonluna</p>
+        </div>
+    </footer>
+</body>
+
+</html>

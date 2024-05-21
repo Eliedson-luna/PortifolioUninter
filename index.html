@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- import dos arquivos css -->
+    <link rel="stylesheet" href="./style/reset.css">
+    <link rel="stylesheet" href="./style/bodyPattern.css">
+    <link rel="stylesheet" href="./style/index.css">
+    <title>Formação</title>
+</head>
+<header> 
+    <!--  menu da página -->
+    <nav class="Menu">
+        <ul class="Menu-list">
+            <li><a id="home-link" href="index.html">Formação</a></li>
+            <li><a id="sobre-link" href="sobre.html">Sobre mim</a></li>
+            <li><a id="projetos-link" href="portifolio.html">Portifólio</a></li>
+            <li><a id="contato-link" href="contato.html">Contato</a></li>
+        </ul>
+    </nav>
+</header>
+
+<body>
+    <!-- bloco de perfil para redes socias e imagem -->
+    <div class="Profile"> 
+        <img id="Profile-picture" src="./img/profile.png">
+        <div class="Profile-Desc">
+            <p>Eliedson Luna</p>
+            <p>Desenvolvedor</p>
+        </div>
+
+        <ul class="Profile-Social">
+            <li><a class="social-link" href="https://github.com/Eliedson-luna" target="_blank" rel="external">GitHub</a></li>
+            <li><a class="social-link" href="https://www.linkedin.com/in/eliedsonluna" target="_blank" rel="external">Linkedin</a></li>
+            <li>Email:<span> goncalveseliedson@gmail.com</span></li>
+        </ul>
+        <div class="cv-Box">
+            <button id="cv-Button">
+                Baixe meu Curriculo
+            </button>
+        </div>
+    </div>
+    <!-- area de conteudo para as formações -->
+    <div class="Content-Area">
+        <div class="Content-Box">
+            <h1>Graduação:</h1>
+            <p Class="Content-Paragraph">
+                Análise e Desenvolvimento de Sistemas - Uninter.
+            </p>
+
+            <h2> Cursos complementares:</h2>
+            <p class="Content-Paragraph">
+                
+            </p>
+        </div>
+    </div>
+
+
+    <footer id="footer">
+        <div>
+            <p>CopyRigth - eliedsonluna</p>
+        </div>
+    </footer>
+
+
+    <!-- script que faz o download do curriculo -->
+    <script src="./js/index.js"></script>
+    <script>
+        const btn = document.getElementById("cv-Button");
+
+        btn.addEventListener("click", function () {
+            btn.onclick = downloadCV();
+        })
+    </script>
+
+</body>
+
+
+</html>

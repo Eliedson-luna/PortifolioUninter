@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- import dos arquivos css -->
+    <link rel="stylesheet" href="./style/reset.css">
+    <link rel="stylesheet" href="./style/bodyPattern.css">
+    <link rel="stylesheet" href="./style/contato.css">
+    <title>Contato</title>
+</head>
+<header> 
+    <!--  menu da página -->
+    <nav class="Menu">
+        <ul class="Menu-list">
+            <li><a id="home-link" href="index.html">Formação</a></li>
+            <li><a id="sobre-link" href="sobre.html">Sobre mim</a></li>
+            <li><a id="projetos-link" href="portifolio.html">Portifólio</a></li>
+            <li><a id="contato-link" href="contato.html">Contato</a></li>
+        </ul>
+    </nav>
+</header>
+<body>
+    <section class="secao-Contato">
+        <div class="secao-Conteudo">
+            <h1>Contato</h1>
+            <form class="formulario-contato" action="https://api.staticforms.xyz/submit" method="post">
+                <div class="input-box">
+                    <label>Nome:</label>
+                    <input type="text" name="name" placeholder="Insira seu nome" >
+                </div>
+                <div class="input-box">
+                    <label>Email:</label>
+                    <input type="email" name="email" placeholder="Insira seu email">
+                </div>
+                <div class="input-box">
+                    <label>Mensagem:</label>
+                    <textarea name="message" cols="50" rows="10" placeholder="Sua mensagem aqui"></textarea>
+                </div>
+                <button id="btn-enviar" type="submit">Enviar</button>
+
+                <input type="hidden" name="accessKey" value="a437f2cd-2214-4b9e-bc38-bc5ebe76d445">
+                <input type="hidden" name="redirectTo" value="http://127.0.0.1:5500/Projeto/portifolioEliedsonUninter/obrigado.html">
+            </form>
+        </div>
+    </section>
+    <footer id="footer">
+        <div>
+            <p>CopyRigth - eliedsonluna</p>
+        </div>
+    </footer>
+</body>
+</html>
